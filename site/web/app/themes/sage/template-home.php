@@ -8,23 +8,23 @@
 		<div class="container">
 			<div class="text-block">
 				<div class="heading-holder">
-					<h1>Fork App</h1>
+					<h1>Genes And Me</h1>
 				</div>
-				<p class="tagline">A real gamechanger in the world of web development</p>
-				<span class="info">Version 2.8 for Mac and Windows</span>
+				<p class="tagline">A real gamechanger in the world of genetyping</p>
+				<span class="info">Never before have we known more about our DNA and the human genome</span>
 			</div>
 		</div>
-		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-decor-01.jpg" alt="" class="bg-stretch">
+		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/dna6.png" alt="" class="bg-stretch">
 	</section>
 	<section class="main">
 		<div class="container">
 			<div id="cta">
-				<a href="http://tympanus.net/codrops/?p=23525" class="btn btn-primary rounded">Download For Free Now</a>
-				<p>Unlimited 30-Days Trial Period</p>
+				<a href="/products/" class="btn btn-primary rounded">View All Our Products</a>
+				<p>Gene Spcific Ideals</p>
 			</div>
 			<div class="row">
 				<div class="text-box col-md-offset-1 col-md-10">
-					<h2>Revolutionary editor</h2>
+					<h2>Revolutionary Gene Typing</h2>
 					<p>Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet vulputate dignissim. Sed id metus id quam auctor molestie eget ut augue. </p>
 					<div class="social-placeholder"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-social-placeholder-01.png" height="26" width="365" alt=""></div>
 				</div>
@@ -42,7 +42,7 @@
 								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/graph-04.svg" width="110" alt="">
 							</div>
 							<div class="text-holder">
-								<h3>Created to Make A Better Web</h3>
+								<h3>Created to Build A Better Human</h3>
 								<p>Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet vulputate dignissim. Sed id metus id quam auctor molestie eget ut augue. </p>
 							</div>
 						</li>
@@ -51,7 +51,7 @@
 								<img class="pull-left" src="<?php echo get_template_directory_uri(); ?>/assets/images/graph-03.svg" width="90" alt="">
 							</div>
 							<div class="text-holder">
-								<h3>Infinite Customization</h3>
+								<h3>Infinite Customization based On Your Genes</h3>
 								<p>Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis odio, ut volutpat massa placerat ac. Curabitur dapibus iaculis mi gravida luctus. Aliquam erat volutpat. </p>
 							</div>
 						</li>
@@ -69,7 +69,7 @@
 								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/graph-01.svg" height="71" alt="">
 							</div>
 							<div class="text-holder">
-								<h3>Time-Saving Power Tools</h3>
+								<h3>Hours Dedicated To You!</h3>
 								<p>Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis odio, ut volutpat massa placerat ac. Curabitur dapibus iaculis mi gravida luctus. Aliquam erat volutpat. </p>
 							</div>
 						</li>
@@ -78,7 +78,7 @@
 				<div class="col-md-7">
 					<div class="slide-holder">
 						<h2 class="hidden-xs hidden-sm text-primary">&lt;Here is what you get&gt;</h2>
-						<div class="img-slide scroll-trigger"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-01.png" height="624" width="1184" alt=""></div>
+						<div class="img-slide scroll-trigger"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/dna1.jpg" height="624" width="1184" alt=""></div>
 					</div>
 				</div>
 			</div>
@@ -126,14 +126,14 @@
 								</div>
 							</div>
 						</div>
-						<a class="btn-prev" href="#"><i class="glyphicon glyphicon-menu-left"></i></a>
-						<a class="btn-next" href="#"><i class="glyphicon glyphicon-menu-right"></i></a>
+						<a class="btn-prev" href="#"><i class="fa fa-facebook"></i></a>
+						<a class="btn-next" href="#"><i class="fa fa-facebook"></i></a>
 					</div>
 				</div>
 				<div class="block-frame">
 					<ul class="cta-list">
 						<li>
-							<a href="#" class="btn btn-default"><i class="fa fa-github"></i> GitHub</a>
+							<a href="#" class="btn btn-danger"><i class="fa fa-youtube"></i> Youtube</a>
 							<p>7 352 Followers</p>
 						</li>
 						<li>
@@ -152,7 +152,7 @@
 	<section class="visual-container">
 		<div class="visual-area">
 			<div class="container">
-				<h2>People Are Talking About Fork</h2>
+				<h2>People Are Talking About GenesandMe</h2>
 				<ul class="testimonials">
 					<li>
 						<div class="img-holder"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-smashing.png" height="43" width="165" alt="smashing magazine"></a></div>
@@ -184,57 +184,58 @@
 		</div>
 		<div class="visual-area">
 			<div class="container">
-				<h2>Fork Subscription Pricing</h2>
+				<h2>Popular Product Prices</h2>
 				<div class="pricing-tables">
 					<div class="plan">
 		                <div class="head">
-		                    <h3>Students</h3>
+		                    <h3>DNA DermaProfile</h3>
 		                </div>
 		                <div class="price">
-		                    <span class="price-main"><span class="symbol">$</span>8</span>
-		                    <span class="price-additional">per month</span>
+		                    <span class="price-main"><span class="symbol">€</span>100</span>
+		                    <span class="price-additional">One Time</span>
 		                </div>
 		                <ul class="item-list">
-		                    <li>Personal License</li>
+		                	<li>1 Person</li>
+		                    <li>Personal Test</li>
 		                </ul>
 		                <button type="button" class="btn btn-default rounded">purchase</button>
 		            </div>
 		            <div class="plan">
 		                <div class="head">
-		                    <h3>professional</h3> </div>
+		                    <h3>Collagene</h3> </div>
 		                <div class="price">
-		                    <span class="price-main"><span class="symbol">$</span>19</span>
-		                    <span class="price-additional">per month</span>
+		                    <span class="price-main"><span class="symbol">€</span>250</span>
+		                    <span class="price-additional">One Time</span>
 		                </div>
 		                    <ul class="item-list">
-		                       <li>Professional License</li>
-		                       <li>Email Support</li>
+		                    	<li>1 Person</li>
+		                        <li>Personal Test</li>
 		                    </ul>
 		                <button type="button" class="btn btn-default rounded">purchase</button>
 		            </div>
 		            <div class="plan recommended">
 		                <div class="head">
-		                    <h3>agency</h3> </div>
+		                    <h3>Sportsgene</h3> </div>
 		                <div class="price">
-		                    <span class="price-main"><span class="symbol">$</span>49</span>
-		                    <span class="price-additional">per month</span>
+		                    <span class="price-main"><span class="symbol">€</span>600</span>
+		                    <span class="price-additional">One Time</span>
 		                </div>
 		                    <ul class="item-list">
-		                        <li>1-12 Team Members</li>
-		                        <li>Phone Support</li>
+								<li>1 Person</li>
+							    <li>Personal Test</li>
 		                    </ul>
 		                <button type="button" class="btn btn-default rounded">purchase</button>
 		            </div>
 		            <div class="plan">
 		                <div class="head">
-		                    <h3>enterprise</h3> </div>
+		                    <h3>All Tests</h3> </div>
 		                <div class="price">
-		                    <span class="price-main"><span class="symbol">$</span>79</span>
-		                    <span class="price-additional">per month</span>
+		                    <span class="price-main"><span class="symbol">€</span>1300</span>
+		                    <span class="price-additional">One Time</span>
 		                </div>
 		                <ul class="item-list">
-		                    <li>Unlimited Team Members</li>
-		                    <li>24/ 7 Phone Support</li>
+							<li>1 Person</li>
+						    <li>Personal Test</li>
 		                </ul>
 		                <button type="button" class="btn btn-default rounded">purchase</button>
 		            </div>
@@ -262,7 +263,7 @@
 			<div class="content">
 				<div class="row">
 					<div class="col-md-4">
-						<h3>New in Release 2.8</h3>
+						<h3>News</h3>
 						<h4>Fully Available: Live Preview Support for Multiple Browsers</h4>
 						<p>Morbi faucibus ante ipsum, a tincidunt libero posuere et. Etiam tempor tortor at odio condimentum, sit amet fringilla ligula maximus. Mauris venenatis nisl nisi, et dictum dui aliquet nec. Sed erat, nec aliquam vel, aliquam ac felis. </p>
 						<h4>Improved Support for Typing </h4>
@@ -270,11 +271,11 @@
 						<h4>Improved Stability</h4>
 						<p>Proin id ligula eget massa tincidunt molestie. Morbi urna lectus, molestie vel quam vel, iaculis fermentum nunc. Morbi imperdiet, leo in interdum pretium.</p>
 						<div class="btn-holder">
-							<a href="#" class="btn btn-link">Go to Release Log</a>
+							<a href="#" class="btn btn-link">Go to News</a>
 						</div>
 					</div>
 					<div class="col-md-4">
-						<h3>Popular Extensions</h3>
+						<h3>Reports</h3>
 						<h4><a href="#">Custom Themes 1.1</a></h4>
 						<p>Etiam viverra vulputate diam, pulvinar cursus augue egestas ullamcorper. </p>
 						<h4><a href="#">Filter Forge</a></h4>
@@ -284,11 +285,11 @@
 						<h4><a href="#">Renamy</a></h4>
 						<p>Vivamus consectetur suscipit elit, ut lacinia diam elementum et.</p>
 						<div class="btn-holder">
-							<a href="#" class="btn btn-link">Go to Marketplace</a>
+							<a href="#" class="btn btn-link">Go to Reports</a>
 						</div>
 					</div>
 					<div class="col-md-4">
-						<h3>New From the Blog</h3>
+						<h3>New Products</h3>
 						<h4><a href="#">Morbi imperdiet, leo in interdum pretium.</a></h4>
 						<time class="date" datetime="2015-02-18">February 18, 2015</time>
 						<h4><a href="#">Donec orci ante, porta vel nulla quis, aliquet hendrerit leo.</a></h4>
@@ -300,7 +301,7 @@
 						<h4><a href="#">Phasellus in augue risus. </a></h4>
 						<time class="date" datetime="2015-01-23">January 23, 2015</time>
 						<div class="btn-holder">
-							<a href="#" class="btn btn-link">Go to Blog</a>
+							<a href="#" class="btn btn-link">Go to Products</a>
 						</div>
 					</div>
 				</div>
