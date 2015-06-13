@@ -1,0 +1,1 @@
+{"nfs":{"/vagrant-nfs-genesandme.com":{"type":"nfs","guestpath":"/vagrant-nfs-genesandme.com","hostpath":"/Users/davidoregan/dev/genesandme/site","disabled":false,"map_uid":501,"map_gid":20,"nfs_udp":true,"nfs_version":3,"uuid":"4007083901"}},"virtualbox":{"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/davidoregan/dev/genesandme","disabled":false}}}
