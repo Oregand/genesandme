@@ -3,7 +3,7 @@
 		<div class="footer-holder">
 			<div class="row">
 				<div class="col-md-4">
-					<div class="logo"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/helix48.png" alt="FORKIO"></a></div>
+					<div class="logo"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/helix48.png" alt="FORKIO"></a></div>
 					<p>Kale chips Carles photo booth jean shorts<br /> liberavisse vegan salvia.</p>
 				</div>
 				<div class="col-md-2">
@@ -29,3 +29,4 @@
 	</div>
 </footer>
 </div>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>

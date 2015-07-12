@@ -14,7 +14,7 @@
 				<span class="info">Never before have we known more about our DNA and the human genome</span>
 			</div>
 		</div>
-		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/dna6.png" alt="" class="bg-stretch">
+		<img src="<?php echo get_template_directory_uri(); ?>/dist/images/dna6.png" alt="" class="bg-stretch">
 	</section>
 	<section class="main">
 		<div class="container">
@@ -26,7 +26,7 @@
 				<div class="text-box col-md-offset-1 col-md-10">
 					<h2>Revolutionary Gene Typing</h2>
 					<p>Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet vulputate dignissim. Sed id metus id quam auctor molestie eget ut augue. </p>
-					<div class="social-placeholder"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-social-placeholder-01.png" height="26" width="365" alt=""></div>
+					<div class="social-placeholder"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/img-social-placeholder-01.png" height="26" width="365" alt=""></div>
 				</div>
 			</div>
 		</div>
@@ -39,7 +39,7 @@
 					<ul class="visual-list">
 						<li>
 							<div class="img-holder">
-								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/graph-04.svg" width="110" alt="">
+								<img src="<?php echo get_template_directory_uri(); ?>/dist/images/graph-04.svg" width="110" alt="">
 							</div>
 							<div class="text-holder">
 								<h3>Created to Build A Better Human</h3>
@@ -48,7 +48,7 @@
 						</li>
 						<li>
 							<div class="img-holder">
-								<img class="pull-left" src="<?php echo get_template_directory_uri(); ?>/assets/images/graph-03.svg" width="90" alt="">
+								<img class="pull-left" src="<?php echo get_template_directory_uri(); ?>/dist/images/graph-03.svg" width="90" alt="">
 							</div>
 							<div class="text-holder">
 								<h3>Infinite Customization based On Your Genes</h3>
@@ -57,7 +57,7 @@
 						</li>
 						<li>
 							<div class="img-holder">
-								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/graph-02.svg" height="84" alt="">
+								<img src="<?php echo get_template_directory_uri(); ?>/dist/images/graph-02.svg" height="84" alt="">
 							</div>
 							<div class="text-holder">
 								<h3>Experimental Features</h3>
@@ -66,7 +66,7 @@
 						</li>
 						<li>
 							<div class="img-holder">
-								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/graph-01.svg" height="71" alt="">
+								<img src="<?php echo get_template_directory_uri(); ?>/dist/images/graph-01.svg" height="71" alt="">
 							</div>
 							<div class="text-holder">
 								<h3>Hours Dedicated To You!</h3>
@@ -78,10 +78,73 @@
 				<div class="col-md-7">
 					<div class="slide-holder">
 						<h2 class="hidden-xs hidden-sm text-primary">&lt;Here is what you get&gt;</h2>
-						<div class="img-slide scroll-trigger"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/dna1.jpg" height="624" width="1184" alt=""></div>
+						<div class="img-slide scroll-trigger"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/dna1.jpg" height="624" width="1184" alt=""></div>
 					</div>
 				</div>
 			</div>
+		</div>
+	</section>
+	<section class="visual-container">
+		<div class="visual-area">
+			<div class="container">
+				<h2>GenesandMe Pricing</h2>
+				<div class="pricing-tables">
+					<div class="plan">
+						<div class="head">
+							<h3>Students</h3>
+						</div>
+						<div class="price">
+							<span class="price-main"><span class="symbol">$</span>8</span>
+							<span class="price-additional">per month</span>
+						</div>
+						<ul class="item-list">
+							<li>Personal License</li>
+						</ul>
+						<button type="button" class="btn btn-default rounded">purchase</button>
+					</div>
+					<div class="plan">
+						<div class="head">
+							<h3>professional</h3> </div>
+						<div class="price">
+							<span class="price-main"><span class="symbol">$</span>19</span>
+							<span class="price-additional">per month</span>
+						</div>
+							<ul class="item-list">
+							<li>Professional License</li>
+							<li>Email Support</li>
+							</ul>
+						<button type="button" class="btn btn-default rounded">purchase</button>
+					</div>
+					<div class="plan recommended">
+						<div class="head">
+							<h3>agency</h3> </div>
+						<div class="price">
+							<span class="price-main"><span class="symbol">$</span>49</span>
+							<span class="price-additional">per month</span>
+						</div>
+							<ul class="item-list">
+								<li>1-12 Team Members</li>
+								<li>Phone Support</li>
+							</ul>
+						<button type="button" class="btn btn-default rounded">purchase</button>
+					</div>
+					<div class="plan">
+						<div class="head">
+							<h3>enterprise</h3> </div>
+						<div class="price">
+							<span class="price-main"><span class="symbol">$</span>79</span>
+							<span class="price-additional">per month</span>
+						</div>
+						<ul class="item-list">
+							<li>Unlimited Team Members</li>
+							<li>24/ 7 Phone Support</li>
+						</ul>
+						<button type="button" class="btn btn-default rounded">purchase</button>
+					</div>
+				</div>
+				<p class="silent">Duis lobortis arcu sed arcu tincidunt feugiat. Nulla nisi mauris, facilisis vitae aliquet id, imperdiet quis nibh. Donec eget elit eu libero tincidunt consequat nec elementum orci. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+			</div>
+			<img src="<?php echo get_template_directory_uri(); ?>/dist/images/img-decor-03.jpg" height="1175" width="1380" alt="" class="bg-stretch">
 		</div>
 	</section>
 	<section class="main">
@@ -90,41 +153,7 @@
 				<div class="block-frame">
 					<div class="cycle-gallery">
 						<div class="mask">
-							<div class="slideset">
-								<div class="slide">
-									<div class="img-box">
-										<div class="img-holder"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/user-01.jpg" height="85" width="85" alt=""></div>
-										<div class="text-holder">
-											<h3>Steven Walters</h3>
-											<a href="#">@DoctorS</a>
-										</div>
-									</div>
-									<p><a href="#">@Pixelbuddha</a> Suspendisse sodales sem est, in scelerisque felis scelerisque in. Aenean faucibus mollis risus. Praesent sit amet erat eget eros.</p>
-									<em class="date">2 hours ago</em>
-								</div>
-								<div class="slide">
-									<div class="img-box">
-										<div class="img-holder"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/user-02.jpg" height="85" width="85" alt=""></div>
-										<div class="text-holder">
-											<h3>Shane Jennings</h3>
-											<a href="#">@shanejen</a>
-										</div>
-									</div>
-									<p><a href="#">@PSD2HTML</a> Ut id porta quam. Morbi sit amet magna lobortis, hendrerit lorem et, tincidunt lorem. Sed vulputate condimentum lorem vel dapibus</p>
-									<em class="date">5 hours ago</em>
-								</div>
-								<div class="slide">
-									<div class="img-box">
-										<div class="img-holder"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/user-03.jpg" height="85" width="85" alt=""></div>
-										<div class="text-holder">
-											<h3>Rafael Belverde</h3>
-											<a href="#">@bellraffi</a>
-										</div>
-									</div>
-									<p><a href="#">@codrops</a> Curabitur nec dapibus ligula. In eget ante in nisi laoreet accumsan pretium vitae est. Nulla lacinia efficitur dui eget accumsan?</p>
-									<em class="date">1 day ago</em>
-								</div>
-							</div>
+							<h2>Be sure to follow us!</h2>
 						</div>
 						<a class="btn-prev" href="#"><i class="fa fa-facebook"></i></a>
 						<a class="btn-next" href="#"><i class="fa fa-facebook"></i></a>
@@ -147,102 +176,6 @@
 					</ul>
 				</div>
 			</div>
-		</div>
-	</section>
-	<section class="visual-container">
-		<div class="visual-area">
-			<div class="container">
-				<h2>People Are Talking About GenesandMe</h2>
-				<ul class="testimonials">
-					<li>
-						<div class="img-holder"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-smashing.png" height="43" width="165" alt="smashing magazine"></a></div>
-						<p><em>Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id dignissim magna. Sed varius urna et pulvinar venenatis. </em></p>
-					</li>
-					<li>
-						<div class="img-holder"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-codrops.png" height="50" width="148" alt="codrops"></a></div>
-						<p><em>Donec euismod dolor ut ultricies consequat. Vivamus urna ipsum, rhoncus molestie neque ac, mollis eleifend nibh.</em></p>
-					</li>
-					<li>
-						<div class="img-holder"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-w.png" height="64" width="64" alt="w"></a></div>
-						<p><em>In efficitur in velit et tempus. Duis nec odio dapibus, suscipit erat fringilla, imperdiet nibh. Morbi tempus auctor felis ac vehicula. </em></p>
-					</li>
-					<li>
-						<div class="img-holder"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-pixel.png" height="24" width="225" alt="Pixel Buddha"></a></div>
-						<p><em>Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id dignissim magna. Sed varius urna et pulvinar venenatis. </em></p>
-					</li>
-					<li>
-						<div class="img-holder"><a href=""><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-cb.png" height="34" width="166" alt="creative bloq"></a></div>
-						<p><em>Praesent ut eros tristique, malesuada lectus vel, lobortis massa. Nulla faucibus lorem id arcu consequat faucibus. </em></p>
-					</li>
-					<li>
-						<div class="img-holder"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-tnw.png" height="34" width="108" alt="tnw"></a></div>
-						<p><em>Fusce pharetra erat id odio blandit, nec pharetra eros venenatis. Pellentesque porttitor cursus massa et vestibulum.</em></p>
-					</li>
-				</ul>
-			</div>
-			<img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-decor-02.jpg" height="764" width="1380" alt="" class="bg-stretch">
-		</div>
-		<div class="visual-area">
-			<div class="container">
-				<h2>Popular Product Prices</h2>
-				<div class="pricing-tables">
-					<div class="plan">
-		                <div class="head">
-		                    <h3>DNA DermaProfile</h3>
-		                </div>
-		                <div class="price">
-		                    <span class="price-main"><span class="symbol">€</span>100</span>
-		                    <span class="price-additional">One Time</span>
-		                </div>
-		                <ul class="item-list">
-		                	<li>1 Person</li>
-		                    <li>Personal Test</li>
-		                </ul>
-		                <button type="button" class="btn btn-default rounded">purchase</button>
-		            </div>
-		            <div class="plan">
-		                <div class="head">
-		                    <h3>Collagene</h3> </div>
-		                <div class="price">
-		                    <span class="price-main"><span class="symbol">€</span>250</span>
-		                    <span class="price-additional">One Time</span>
-		                </div>
-		                    <ul class="item-list">
-		                    	<li>1 Person</li>
-		                        <li>Personal Test</li>
-		                    </ul>
-		                <button type="button" class="btn btn-default rounded">purchase</button>
-		            </div>
-		            <div class="plan recommended">
-		                <div class="head">
-		                    <h3>Sportsgene</h3> </div>
-		                <div class="price">
-		                    <span class="price-main"><span class="symbol">€</span>600</span>
-		                    <span class="price-additional">One Time</span>
-		                </div>
-		                    <ul class="item-list">
-								<li>1 Person</li>
-							    <li>Personal Test</li>
-		                    </ul>
-		                <button type="button" class="btn btn-default rounded">purchase</button>
-		            </div>
-		            <div class="plan">
-		                <div class="head">
-		                    <h3>All Tests</h3> </div>
-		                <div class="price">
-		                    <span class="price-main"><span class="symbol">€</span>1300</span>
-		                    <span class="price-additional">One Time</span>
-		                </div>
-		                <ul class="item-list">
-							<li>1 Person</li>
-						    <li>Personal Test</li>
-		                </ul>
-		                <button type="button" class="btn btn-default rounded">purchase</button>
-		            </div>
-				</div>
-				<p class="silent">Duis lobortis arcu sed arcu tincidunt feugiat. Nulla nisi mauris, facilisis vitae aliquet id, imperdiet quis nibh. Donec eget elit eu libero tincidunt consequat nec elementum orci. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
-			</div>
-			<img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-decor-03.jpg" height="1175" width="1380" alt="" class="bg-stretch">
 		</div>
 	</section>
 	<section class="area">

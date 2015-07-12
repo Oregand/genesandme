@@ -197,7 +197,7 @@ var scroller = {
   config : {
     docElem : window.document.documentElement,
     // The viewportFactor defines how much of the appearing item has to be visible in order to trigger the animation
-    // if we'd use a value of 0, this would mean that it would add the animation class as soon as the item is in the viewport. 
+    // if we'd use a value of 0, this would mean that it would add the animation class as soon as the item is in the viewport.
     // If we were to use the value of 1, the animation would only be triggered when we see all of the item in the viewport (100% of it)
     viewportFactor : 0,
     elems : '.slide-holder'
@@ -205,7 +205,7 @@ var scroller = {
   getViewportH : function() {
     var client = this.config.docElem.clientHeight,
       inner = window.innerHeight;
-    
+
     if( client < inner ) {
       return inner;
     }
@@ -532,9 +532,9 @@ jQuery(function() {
       if(!this.animating && this.slides.length > 1) {
         this.direction = -1;
         this.prevIndex = this.currentIndex;
-        if(this.currentIndex > 0) { 
-          this.currentIndex--; 
-        } else { 
+        if(this.currentIndex > 0) {
+          this.currentIndex--;
+        } else {
           this.currentIndex = this.slides.length - 1;
         }
         this.switchSlide();
@@ -544,10 +544,10 @@ jQuery(function() {
       if(!this.animating && this.slides.length > 1) {
         this.direction = 1;
         this.prevIndex = this.currentIndex;
-        if(this.currentIndex < this.slides.length - 1) { 
-          this.currentIndex++; 
-        } else { 
-          this.currentIndex = 0; 
+        if(this.currentIndex < this.slides.length - 1) {
+          this.currentIndex++;
+        } else {
+          this.currentIndex = 0;
         }
         this.switchSlide();
       }
@@ -682,3 +682,21 @@ jQuery(function() {
 }(jQuery));
 
 
+//Custom Map
+function init() {
+    var mapOptions = {
+        zoom: 11,
+        scrollwheel: false,
+        center: new google.maps.LatLng(53.340737, -6.294825),
+        styles: [{"featureType":"all","elementType":"all","stylers":[{"invert_lightness":true},{"saturation":10},{"lightness":30},{"gamma":0.5},{"hue":"#435158"}]}]
+    };
+
+    var mapElement = document.getElementById('map');
+    var map = new google.maps.Map(mapElement, mapOptions);
+    var marker = new google.maps.Marker({
+        position: new google.maps.LatLng(53.340737, -6.294825),
+        map: map,
+        title: 'St James Hospital'
+    });
+}
+google.maps.event.addDomListener(window, 'load', init);

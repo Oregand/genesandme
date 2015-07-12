@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Reports Page
+ * Template Name: News List Page
  */
 ?>
 <?php
@@ -16,13 +16,13 @@
 	<div class="container">
 		<div class="text-block">
 			<div class="heading-holder">
-				<h1>Reports</h1>
+				<h1>News</h1>
 			</div>
 			<p class="tagline">Here you will find our latest updates!</p>
 			<span class="info">Check back often to stay updated on the world of genes.</span>
 		</div>
 	</div>
-	<img src="<?php echo get_template_directory_uri(); ?>/assets/images/mc.png" alt="" class="bg-stretch">
+	<img src="<?php echo get_template_directory_uri(); ?>/assets/images/world.jpg" alt="" class="bg-stretch">
 </section>
 
 <section class="main">
