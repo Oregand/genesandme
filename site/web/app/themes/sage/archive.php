@@ -1,8 +1,4 @@
-<?php
-/**
- * Template Name: News List Page
- */
-?>
+
 <?php
     $args = array(
         'type' => 'post',
@@ -11,27 +7,6 @@
         );
       $categories = get_categories($args);
 ?>
-
-<?php
-    //vars
-    $hero_title = get_field('hero_title');
-    $hero_sub_title = get_field('hero_sub_title');
-    $hero_tag = get_field('hero_tag');
-    $hero_image = get_field('hero_image');
-?>
-	<section class="visual">
-		<div class="container">
-			<div class="text-block">
-				<div class="heading-holder">
-					<h1><?php echo $hero_title; ?></h1>
-				</div>
-				<p class="tagline"><?php echo $hero_sub_title; ?></p>
-				<span class="info"><?php echo $hero_tag; ?></span>
-			</div>
-		</div>
-		<img src="<?php echo $hero_image; ?>" alt="" class="bg-stretch">
-	</section>
-
 <section class="main">
     <div class='container'>
       		<?php

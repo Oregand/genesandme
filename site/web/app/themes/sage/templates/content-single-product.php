@@ -9,55 +9,42 @@
           $categories = get_categories($args);
     ?>
 
-    <section class="visual">
-        <div class='container'>
-          <div class='row'>
-            <div class='col-md-6'>
-              <h2 class="pull-left">Products</h2>
-            </div>
-            <div class='col-md-6'>
-                <ul class="list-inline">
-                    <?php foreach ($categories as $cat) {
-                            ?>
-      		                    <a href="<?php echo $cat->name; ?>"><li <?php echo isset($_GET['cat']) && $_GET['cat'] == $cat->term_id ? 'selected' : '' ?> value="/resources?cat=<?php echo $cat->term_id ?>"><?php echo $cat->name; ?></li></a>
-      		              <?php
-                        }
-      		          ?>
-                </ul>
-            </div>
-          </div>
-        </div>
-        <img src="<?php echo get_template_directory_uri(); ?>/dist/images/145592.jpg" alt="" class="bg-stretch">
-    </section>
+    <?php
+        //vars
+        $price = get_field('price');
+        $time_line = get_field('time_line');
+    ?>
 
     <section class="main">
-        <div class='container text-center'>
+        <div class='container'>
             <div class="row">
-                <div class="col-md-10">
-                    <span class="label label-warning pull-left">Warning</span>
-                    <h3 class="pull-left"><?php echo the_category(); ?></h3>
-
+                <div class="col-md-8">
                     <h2><?php echo the_title(); ?></h2>
-
+                    <h2>Price: <?php echo $price; ?> Euro</h2>
+                    <h3>Payment Plan: <?php echo $time_line; ?></h3>
+                </div>
+                <div class="col-md-4">
+                    <h2><?php echo the_date(); ?></h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-center"><?php echo the_content() ;?></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
                     <?php
                           $thumb_id = get_post_thumbnail_id();
                           $thumb_url_array = wp_get_attachment_image_src($thumb_id, 'thumbnail-size');
                           $thumb_url = $thumb_url_array[0];
 
                           if($thumb_url) { ?>
-                              <img class="img-responsive img-post" src="<?php echo $thumb_url; ?>" alt="Post Image">
+                              <img class="img-responsive center-block" src="<?php echo $thumb_url; ?>" alt="Post Image">
                      <?php } ?>
-
-                    <p><?php echo the_content() ;?></p>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 text-center">
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=" title="Share on Facebook" target="_blank" class="btn btn-facebook"><i class="fa fa-facebook"></i> Facebook</a>
-                    <a href="http://twitter.com/home?status=" title="Share on Twitter" target="_blank" class="btn btn-twitter"><i class="fa fa-twitter"></i> Twitter</a>
-                    <a href="http://www.linkedin.com/shareArticle?mini=true&url=&title=&summary=" title="Share on LinkedIn" target="_blank" class="btn btn-linkedin"><i class="fa fa-linkedin"></i> LinkedIn</a>
-                    <a href="https://plus.google.com/share?url=" title="Share on Google+" target="_blank" class="btn btn-googleplus"><i class="fa fa-google-plus"></i> Google+</a>
-                    <a href="http://www.stumbleupon.com/submit?url=" title="Share on StumbleUpon" target="_blank" data-placement="top" class="btn btn-sitename"><i class="fa fa-sitename"></i> Email</a>
+                <div class="col-md-6 text-center">
+                    <p><?php echo Paypal_payment_accept(); ?></p>
                 </div>
             </div>
         <div>
@@ -66,7 +53,7 @@
     <section class="area">
         <div class='container'>
             <div class="row text-center">
-                <h2>On The Same Subject</h2>
+                <h2>Other Products You Might Like</h2>
             </div>
           		<?php
           			$temp = $wp_query;

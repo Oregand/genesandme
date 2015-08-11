@@ -4,47 +4,69 @@
  */
 ?>
 
-<section class="visual">
-	<div class="container">
-		<div class="text-block">
-			<div class="heading-holder">
-				<h1>Genes And Me</h1>
+<style type="text/css">
+	/* Set a size for our map container, the Google Map will take up 100% of this container */
+	#map {
+		width: 100%;
+		height: 500px;
+	}
+</style>
+
+<?php
+	//vars
+	$hero_title = get_field('hero_title');
+	$hero_sub_title = get_field('hero_sub_title');
+	$hero_tag = get_field('hero_tag');
+	$hero_image = get_field('hero_image');
+?>
+	<section class="visual">
+		<div class="container">
+			<div class="text-block">
+				<div class="heading-holder">
+					<h1><?php echo $hero_title; ?></h1>
+				</div>
+				<p class="tagline"><?php echo $hero_sub_title; ?></p>
+				<span class="info"><?php echo $hero_tag; ?></span>
 			</div>
-			<p class="tagline">A real gamechanger in the world of genetyping</p>
-			<span class="info">Never before have we known more about our DNA and the human genome</span>
 		</div>
-	</div>
-	<img src="<?php echo get_template_directory_uri(); ?>/assets/images/blur2.jpg" alt="" class="bg-stretch">
-</section>
+		<img src="<?php echo $hero_image; ?>" alt="" class="bg-stretch">
+	</section>
+<?php
+	//vars
+	$address_section_title = get_field('address_section_title');
+	$address_text_1 = get_field('address_text_1');
+	$address_text_2 = get_field('address_text_2');
+?>
+
 <section class="main">
 	<div class="container">
 		<div class="content">
 			<div class="row">
-				<div class="col-md-4">
-					<h3>Address</h3>
+				<div class="col-md-12 text-center">
+					<h3><?php echo $address_section_title; ?></h3>
+				</div>
+			</div>
+			<div class="row text-center">
+				<div class="col-md-3">
 					<h4>Main Address:</h4>
-					<p>Morbi faucibus ante ipsum, a tincidunt libero posuere et. Etiam tempor tortor at odio condimentum, sit amet fringilla ligula maximus. Mauris venenatis nisl nisi, et dictum dui aliquet nec. Sed erat, nec aliquam vel, aliquam ac felis. </p>
+					<p><?php echo $address_text_1; ?>
+				</div>
+				<div class="col-md-3">
 					<h4>Sub Address:</h4>
-					<p>Nulla purus quam, pulvinar sed ante et, feugiat maximus velit. Donec eu elit mauris. </p>
+					<p><?php echo $address_text_2; ?>
+				</div>
+				<div class="col-md-3">
 					<div class="btn-holder">
-						<a href="#" class="btn btn-link">Get Directions!</a>
+						<a href="https://goo.gl/maps/V2CyC" class="btn btn-link">Get Directions</a>
 					</div>
 				</div>
-				<div class="col-md-4">
-					<h3>People To Contact</h3>
-					<h4><a href="https://linkdin.com">David Sheen</a></h4>
-					<p>The main man</p>
-					<h4><a href="https://linkdin.com">David Sheen</a></h4>
-					<p>The main man</p>
-					<h4><a href="https://linkdin.com">David Sheen</a></h4>
-					<p>The main man</p>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div id="map"></div>
 				</div>
-				<div class="col-md-4">
-					<h3>Websites We Recommend!</h3>
-					<h4><a href="#">St James Website</a></h4>
-					<time class="date" datetime="2015-02-18">They The Best!</time>
-					<h4><a href="#">Oregand.github.io</a></h4>
-					<time class="date" datetime="2015-02-12">He Made This Website</time>
+				<div class="col-md-6">
+					<?php echo do_shortcode('[contact-form-7 id="72" title="Contact form 1"]'); ?>
 				</div>
 			</div>
 		</div>

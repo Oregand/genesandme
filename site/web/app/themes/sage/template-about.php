@@ -3,183 +3,174 @@
  * Template Name: About Page
  */
 ?>
-
-<style type="text/css">
-	/* Set a size for our map container, the Google Map will take up 100% of this container */
-	#map {
-		width: 100%;
-		height: 910px;
-		margin-top: -110px;
-	}
-</style>
-
-
+<?php
+//vars
+$hero_title = get_field('hero_title');
+$hero_sub_title = get_field('hero_sub_title');
+$hero_tag = get_field('hero_tag');
+$hero_image = get_field('hero_image');
+?>
 	<section class="visual">
-	        <div id="map"></div>
-	</section>
-	<section class="main">
 		<div class="container">
-			<div id="cta">
-				<a href="https://goo.gl/maps/V2CyC" class="btn btn-primary rounded">Get Directions</a>
-			</div>
-			<div class="row">
-				<div class="text-box col-md-offset-1 col-md-10">
-					<h2>GenesandMe</h2>
-					<p>Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet vulputate dignissim. Sed id metus id quam auctor molestie eget ut augue. </p>
+			<div class="text-block">
+				<div class="heading-holder">
+					<h1><?php echo $hero_title; ?></h1>
 				</div>
+				<p class="tagline"><?php echo $hero_sub_title; ?></p>
+				<span class="info"><?php echo $hero_tag; ?></span>
 			</div>
 		</div>
+		<img src="<?php echo $hero_image; ?>" alt="" class="bg-stretch">
 	</section>
+<?php
+	//vars
+	$what_you_get_tag = get_field('what_you_get_tag');
+	$what_you_get_main_image = get_field('what_you_get_main_image');
+?>
 	<section class="area">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-5">
-					<h2 class="visible-xs visible-sm text-primary">&lt;Here is what you get&gt;</h2>
-					<ul class="visual-list">
-						<li>
-							<div class="img-holder">
-								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/graph-04.svg" width="110" alt="">
-							</div>
-							<div class="text-holder">
-								<h3>Address</h3>
-								<p>Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet vulputate dignissim. Sed id metus id quam auctor molestie eget ut augue. </p>
-							</div>
-						</li>
-						<li>
-							<div class="img-holder">
-								<img class="pull-left" src="<?php echo get_template_directory_uri(); ?>/assets/images/graph-03.svg" width="90" alt="">
-							</div>
-							<div class="text-holder">
-								<h3>Email Details</h3>
-								<p>Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis odio, ut volutpat massa placerat ac. Curabitur dapibus iaculis mi gravida luctus. Aliquam erat volutpat. </p>
-							</div>
-						</li>
-						<li>
-							<div class="img-holder">
-								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/graph-02.svg" height="84" alt="">
-							</div>
-							<div class="text-holder">
-								<h3>Phone Details</h3>
-								<p>Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis odio, ut volutpat massa placerat ac. Curabitur dapibus iaculis mi gravida luctus. Aliquam erat volutpat. </p>
-							</div>
-						</li>
-						<li>
-							<div class="img-holder">
-								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/graph-01.svg" height="71" alt="">
-							</div>
-							<div class="text-holder">
-								<h3></h3>
-								<p>Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis odio, ut volutpat massa placerat ac. Curabitur dapibus iaculis mi gravida luctus. Aliquam erat volutpat. </p>
-							</div>
-						</li>
-					</ul>
+					<h2 class="visible-xs visible-sm text-primary">&lt;<?php echo $what_you_get_tag; ?>&gt;</h2>
+					<?php if( have_rows('what_you_get_sub_sections') ): ?>
+						<ul class="visual-list">
+						<?php while( have_rows('what_you_get_sub_sections') ): the_row();
+
+							// vars
+							$image = get_sub_field('image');
+							$title = get_sub_field('title');
+							$description = get_sub_field('description');
+
+							?>
+
+							<li>
+								<div class="img-holder">
+									<img class="img-circle" src="<?php echo $image; ?>" width="110" alt="">
+								</div>
+								<div class="text-holder">
+									<h3><?php echo $title; ?></h3>
+									<p><?php echo $description; ?></p>
+								</div>
+							</li>
+
+						<?php endwhile; ?>
+						</ul>
+					<?php endif; ?>
 				</div>
 				<div class="col-md-7">
 					<div class="slide-holder">
-						<h2 class="hidden-xs hidden-sm text-primary">Who are we?</h2>
-						<div class="img-slide scroll-trigger"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/StJamesHospital_1776986a.jpg" height="624" width="1184" alt=""></div>
+						<h2 class="hidden-xs hidden-sm text-primary">&lt;Here is what you get&gt;</h2>
+						<div class="img-slide scroll-trigger"><img src="<?php echo $what_you_get_main_image; ?>" height="624" width="1184" alt=""></div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
+
+	<?php
+		//vars
+		$social_buttons_section_title = get_field('social_buttons_section_title');
+		$youtube_link = get_field('youtube_link');
+		$twitter_link = get_field('twitter_link');
+		$facebook_link = get_field('facebook_link');
+		$youtube_followers = get_field('youtube_followers');
+		$twitter_followers = get_field('twitter_followers');
+		$facebook_followers = get_field('facebook_followers');
+
+	?>
+
 	<section class="main">
 		<div class="container">
 			<div class="block-holder">
 				<div class="block-frame">
 					<div class="cycle-gallery">
 						<div class="mask">
-							<div class="slideset">
-								<div class="slide">
-									<div class="img-box">
-										<div class="img-holder"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/user-01.jpg" height="85" width="85" alt=""></div>
-										<div class="text-holder">
-											<h3>Steven Walters</h3>
-											<a href="#">@DoctorS</a>
+							<h2><?php echo $social_buttons_section_title; ?></h2>
+
+							<?php if( have_rows('staff') ): ?>
+								<div class="slideset">
+									<?php while( have_rows('staff') ): the_row();
+
+										// vars
+										$staff_image = get_sub_field('staff_image');
+										$staff_name = get_sub_field('staff_name');
+										$staff_position = get_sub_field('staff_position');
+										$staff_text = get_sub_field('staff_text');
+										$staff_handle = get_sub_field('staff_handle');
+										$staff_handle_link = get_sub_field('staff_handle_link');
+
+										?>
+
+										<div class="slide">
+											<div class="img-box">
+												<div class="img-holder"><img src="<?php echo $staff_image; ?>" height="85" width="85" alt=""></div>
+												<div class="text-holder">
+													<h3><?php echo $staff_name; ?></h3>
+													<em class="date"><?php echo $staff_position; ?></em>
+													<a href="<?php echo $staff_handle_link; ?>"><?php echo $staff_handle; ?></a>
+													<p><?php echo $staff_text; ?></p>
+												</div>
+											</div>
 										</div>
-									</div>
-									<p><a href="#">@Pixelbuddha</a> Suspendisse sodales sem est, in scelerisque felis scelerisque in. Aenean faucibus mollis risus. Praesent sit amet erat eget eros.</p>
-									<em class="date">2 hours ago</em>
+
+									<?php endwhile; ?>
 								</div>
-								<div class="slide">
-									<div class="img-box">
-										<div class="img-holder"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/user-02.jpg" height="85" width="85" alt=""></div>
-										<div class="text-holder">
-											<h3>Shane Jennings</h3>
-											<a href="#">@shanejen</a>
-										</div>
-									</div>
-									<p><a href="#">@PSD2HTML</a> Ut id porta quam. Morbi sit amet magna lobortis, hendrerit lorem et, tincidunt lorem. Sed vulputate condimentum lorem vel dapibus</p>
-									<em class="date">5 hours ago</em>
-								</div>
-								<div class="slide">
-									<div class="img-box">
-										<div class="img-holder"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/user-03.jpg" height="85" width="85" alt=""></div>
-										<div class="text-holder">
-											<h3>Rafael Belverde</h3>
-											<a href="#">@bellraffi</a>
-										</div>
-									</div>
-									<p><a href="#">@codrops</a> Curabitur nec dapibus ligula. In eget ante in nisi laoreet accumsan pretium vitae est. Nulla lacinia efficitur dui eget accumsan?</p>
-									<em class="date">1 day ago</em>
-								</div>
-							</div>
+							<?php endif; ?>
+
 						</div>
-						<a class="btn-prev" href="#"><i class="glyphicon glyphicon-menu-left"></i></a>
-						<a class="btn-next" href="#"><i class="glyphicon glyphicon-menu-right"></i></a>
+						<a class="btn-prev" href="#"><i class="fa fa-arrow-left"></i></a>
+						<a class="btn-next" href="#"><i class="fa fa-arrow-right"></i></a>
 					</div>
 				</div>
 				<div class="block-frame">
 					<ul class="cta-list">
 						<li>
-							<a href="#" class="btn btn-default"><i class="fa fa-github"></i> GitHub</a>
-							<p>7 352 Followers</p>
+							<a href="<?php echo $youtube_link; ?>" class="btn btn-danger"><i class="fa fa-youtube"></i> Youtube</a>
+							<p><?php echo $youtube_followers; ?></p>
 						</li>
 						<li>
-							<a href="#" class="btn btn-info"><i class="fa fa-twitter"></i> Twitter</a>
-							<p>136 312 Followers</p>
+							<a href="<?php echo $twitter_link; ?>" class="btn btn-info"><i class="fa fa-twitter"></i> Twitter</a>
+							<p><?php echo $twitter_followers; ?></p>
 						</li>
 						<li>
-							<a href="#" class="btn btn-blue"><i class="fa fa-facebook"></i> Facebook</a>
-							<p>218 092 Subscribers</p>
+							<a href="<?php echo $facebook_link; ?>" class="btn btn-blue"><i class="fa fa-facebook"></i> Facebook</a>
+							<p><?php echo $facebook_followers; ?></p>
 						</li>
 					</ul>
 				</div>
 			</div>
 		</div>
 	</section>
+
+<?php
+//vars
+	$talking_about_us_section_title = get_field('talking_about_us_section_title');
+?>
 	<section class="visual-container">
-		<div class="visual-area">
+		<div class="visual">
 			<div class="container">
-				<h2>People Are Talking About Fork</h2>
-				<ul class="testimonials">
-					<li>
-						<div class="img-holder"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-smashing.png" height="43" width="165" alt="smashing magazine"></a></div>
-						<p><em>Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id dignissim magna. Sed varius urna et pulvinar venenatis. </em></p>
-					</li>
-					<li>
-						<div class="img-holder"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-codrops.png" height="50" width="148" alt="codrops"></a></div>
-						<p><em>Donec euismod dolor ut ultricies consequat. Vivamus urna ipsum, rhoncus molestie neque ac, mollis eleifend nibh.</em></p>
-					</li>
-					<li>
-						<div class="img-holder"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-w.png" height="64" width="64" alt="w"></a></div>
-						<p><em>In efficitur in velit et tempus. Duis nec odio dapibus, suscipit erat fringilla, imperdiet nibh. Morbi tempus auctor felis ac vehicula. </em></p>
-					</li>
-					<li>
-						<div class="img-holder"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-pixel.png" height="24" width="225" alt="Pixel Buddha"></a></div>
-						<p><em>Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id dignissim magna. Sed varius urna et pulvinar venenatis. </em></p>
-					</li>
-					<li>
-						<div class="img-holder"><a href=""><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-cb.png" height="34" width="166" alt="creative bloq"></a></div>
-						<p><em>Praesent ut eros tristique, malesuada lectus vel, lobortis massa. Nulla faucibus lorem id arcu consequat faucibus. </em></p>
-					</li>
-					<li>
-						<div class="img-holder"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-tnw.png" height="34" width="108" alt="tnw"></a></div>
-						<p><em>Fusce pharetra erat id odio blandit, nec pharetra eros venenatis. Pellentesque porttitor cursus massa et vestibulum.</em></p>
-					</li>
-				</ul>
+				<h2><?php echo $talking_about_us_section_title; ?></h2>
+
+				<?php if( have_rows('people_talking_about_us') ): ?>
+					<ul class="testimonials">
+						<?php while( have_rows('people_talking_about_us') ): the_row();
+
+							// vars
+							$image = get_sub_field('image');
+							$text = get_sub_field('text');
+
+							?>
+
+							<li>
+								<div class="img-holder"><a href="#"><img src="<?php echo $image; ?>" height="43" width="165" alt="smashing magazine"></a></div>
+								<p><em><?php echo $text; ?> </em></p>
+							</li>
+
+						<?php endwhile; ?>
+					</ul>
+				<?php endif; ?>
 			</div>
-			<img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-decor-02.jpg" height="764" width="1380" alt="" class="bg-stretch">
+			<img src="<?php echo get_template_directory_uri(); ?>/assets/images/dna7.jpg" height="764" width="1380" alt="" class="bg-stretch">
 		</div>
 	<div>
 </section>
