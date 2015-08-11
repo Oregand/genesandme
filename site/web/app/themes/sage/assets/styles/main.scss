@@ -202,7 +202,7 @@ p {
 	transform: rotate(-45deg);
 }
 .visual {
-	min-height: 904px;
+	min-height: 604px;
 	position: relative;
 	overflow: hidden;
 	text-align: center;
@@ -214,6 +214,8 @@ p {
 
 	.bg-stretch {
 		position: absolute;
+		min-width: 100%;
+		min-height: auto;
 		bottom: 0;
 		left: 50%;
 		-webkit-transform: translateX(-50%);
@@ -251,7 +253,7 @@ p {
 		text-transform: uppercase;
 	}
 	.text-block {
-		padding: 90px 0;
+		margin-top: 215px;
 	}
 }
 #cta {

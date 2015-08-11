@@ -3,15 +3,22 @@
  * Template Name: Home Page
  */
 ?>
+<?php
+	//vars
+	$hero_title = get_field('hero_title');
+	$hero_sub_title = get_field('hero_sub_title');
+	$hero_tag = get_field('hero_tag');
+
+?>
 
 	<section class="visual">
 		<div class="container">
 			<div class="text-block">
 				<div class="heading-holder">
-					<h1>Genes And Me</h1>
+					<h1><?php echo $hero_title; ?></h1>
 				</div>
-				<p class="tagline">A real gamechanger in the world of genetyping</p>
-				<span class="info">Never before have we known more about our DNA and the human genome</span>
+				<p class="tagline"><?php echo $hero_sub_title; ?></p>
+				<span class="info"><?php echo $hero_tag; ?></span>
 			</div>
 		</div>
 		<img src="<?php echo get_template_directory_uri(); ?>/dist/images/dna6.png" alt="" class="bg-stretch">
@@ -26,7 +33,7 @@
 				<div class="text-box col-md-offset-1 col-md-10">
 					<h2>Revolutionary Gene Typing</h2>
 					<p>Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet vulputate dignissim. Sed id metus id quam auctor molestie eget ut augue. </p>
-					<div class="social-placeholder"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/img-social-placeholder-01.png" height="26" width="365" alt=""></div>
+					<div class="social-placeholder"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/sprite.png" height="26" width="365" alt=""></div>
 				</div>
 			</div>
 		</div>
@@ -178,18 +185,8 @@
 			</div>
 		</div>
 	</section>
-	<section class="area">
-		<div class="container">
-			<div class="subscribe">
-				<h3>Subscribe to Our Newsletter</h3>
-				<form class="form-inline">
-					<button type="submit" class="btn btn-primary rounded">Subscribe</button>
-					<div class="form-group">
-						<input type="email" class="form-control rounded" id="exampleInputEmail2" placeholder="Email...">
-					</div>
-				</form>
-			</div>
-		</div>
+	<section class="visual">
+		<img src="<?php echo get_template_directory_uri(); ?>/dist/images/dna_zps421036f0.jpg" alt="" class="bg-stretch">
 	</section>
 	<section class="main">
 		<div class="container">
