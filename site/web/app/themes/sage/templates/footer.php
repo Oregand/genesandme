@@ -3,31 +3,28 @@
 		<div class="footer-holder">
 			<div class="row">
 				<div class="col-md-4">
-					<div class="logo"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.svg" alt="FORKIO"></a></div>
-					<p>Lorem ipsum dolor sit amet, feugiat delicat<br /> liberavisse id cum no quo.</p>
+					<div class="logo"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/helix48.png" alt="GenesAndMe"></a></div>
+					<span><i class="fa fa-copyright"></i> CopyRight 2015 GenesAndMe</span></br>
+					<span><i class="fa fa-cogs"></i> See Our<a href="/terms-and-conditions/"> Terms & Conditions</a></span></br>
+					<span><i class="fa fa-github"></i> Designed & Built By <a href="https://oregand.github.io">David O'Regan</a></span>
 				</div>
 				<div class="col-md-2">
-					<h4>Navigation</h4>
-					<ul>
-						<li><a href="#">Home</a></li>
-						<li><a href="#">Overview</a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Buying Options</a></li>
-						<li><a href="#">Support</a></li>
-					</ul>
+					<h4>Navigate Our Site</h4>
+					<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'primary' ) ); ?>
 				</div>
 				<div class="col-md-3">
 					<div class="text-holder">
-						<strong class="phone"><a href="tel:3475677890">347 567 78 90</a></strong>
-						<span class="available">Available from 12PM - 18PM</span>
-						<h4>New York, NY</h4>
-						<address>560 Judah St &amp; 15th Ave, Apt 5 San Francisco, CA, 230903</address>
+						<h4>Get In Touch</h4>
+						<strong class="phone"><?php echo get_option('tel_number'); ?></strong>
+						<span class="available"><a href="mailto:<?php echo get_option('email'); ?>"><?php echo get_option('email'); ?></a></span>
+						<h4><?php echo get_option('address_1'); ?></h4>
+						<address><?php echo get_option('address'); ?></address>
 					</div>
 				</div>
 				<div class="col-md-3">
 					<div class="text-frame">
-						<h4>Info</h4>
-						<p>Wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex commodo consequat. Autem vel hendrerit iriure dolor in hendrerit.</p>
+						<h4>Our Information</h4>
+						<p><?php echo get_option('about'); ?></p>
 					</div>
 				</div>
 			</div>
@@ -35,3 +32,4 @@
 	</div>
 </footer>
 </div>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
