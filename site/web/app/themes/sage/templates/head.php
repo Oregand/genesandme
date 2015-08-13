@@ -2,9 +2,9 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>GenesandMe</title>
-	<meta name="description" content="A free responsive website template made exclusively for Codrops by Pixel Buddha and PSD2HTML">
-	<meta name="keywords" content="website template, css3, one page, bootstrap, app template, web app, start-up">
-	<meta name="author" content="Pixel Buddha and PSD2HTML for Codrops">
+	<meta name="description" content="GenesandMe, DNA based website">
+	<meta name="keywords" content="Genes, You, Dna, Products">
+	<meta name="author" content="David O'Regan">
 	<link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-touch-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-touch-icon-60x60.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-touch-icon-72x72.png">
@@ -25,9 +25,6 @@
 	<meta name="msapplication-TileImage" content="favicons/mstile-144x144.png">
 	<meta name="msapplication-config" content="favicons/browserconfig.xml">
 	<meta name="theme-color" content="#ffffff">
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/all.css">
 	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Source+Sans+Pro:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
   <?php wp_head(); ?>
 </head>

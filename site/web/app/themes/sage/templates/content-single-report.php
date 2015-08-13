@@ -2,27 +2,22 @@
 
     <?php
         $args = array(
-            'type' => 'post',
+            'type' => 'report',
             'orderby' => 'name',
             'order' => 'ASC'
             );
           $categories = get_categories($args);
     ?>
 
+
     <section class="main">
         <div class='container'>
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-md-12 text-center">
+                    <h3 class="pull-left"><?php echo the_category(); ?></h3>
+
                     <h2><?php echo the_title(); ?></h2>
-                    <h2><?php echo the_date(); ?></h2>
-                </div>
-                <div class="col-md-4">
-                    <h2><?php echo the_category(); ?></h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <p class="text-center"><?php echo the_content() ;?></p>
+                    <p><?php echo the_content() ;?></p>
                     <?php
                           $thumb_id = get_post_thumbnail_id();
                           $thumb_url_array = wp_get_attachment_image_src($thumb_id, 'thumbnail-size');
@@ -46,7 +41,7 @@
           			$wp_query= null;
           			$wp_query = new WP_Query();
                     $args = array(
-                			  'post_type' => 'post',
+                			  'post_type' => 'report',
                 			  'posts_per_page' => '3',
                 			  'orderby' => 'rand'
                 	);
