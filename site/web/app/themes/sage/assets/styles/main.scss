@@ -16,6 +16,9 @@ mobileLandscape:480px);
 @import "custom-bootstrap/base/markup-mixins";
 @import "custom-bootstrap/mq";
 
+//Vendor assets
+@import "vendor/font-awesome.scss";
+
 * {
 	font-size: 100.01%;
 }
@@ -30,6 +33,16 @@ body {
 }
 p {
 	font-family: "Source Sans Pro", sans-serif;
+}
+
+.product-header {
+	padding-top: 40px;
+}
+.equal, .equal > div[class*='col-'] {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    flex:1 0 auto;
 }
 .btn, a {
 	-webkit-transition: color linear .4s, background-color linear .4s, border-color linear .4s;
@@ -202,7 +215,7 @@ p {
 	transform: rotate(-45deg);
 }
 .visual {
-	min-height: 904px;
+	min-height: 604px;
 	position: relative;
 	overflow: hidden;
 	text-align: center;
@@ -214,6 +227,8 @@ p {
 
 	.bg-stretch {
 		position: absolute;
+		min-width: 100%;
+		min-height: auto;
 		bottom: 0;
 		left: 50%;
 		-webkit-transform: translateX(-50%);
@@ -251,7 +266,7 @@ p {
 		text-transform: uppercase;
 	}
 	.text-block {
-		padding: 90px 0;
+		margin-top: 215px;
 	}
 }
 #cta {
@@ -555,6 +570,27 @@ p {
 		position: relative;
 		overflow: hidden;
 		padding: 90px 0 70px;
+		font-size: 1.4rem;
+		line-height: 1.5;
+		color: #fff;
+
+		> .container {
+			position: relative;
+			z-index: 1;
+
+			> p {
+				margin: 0 120px 5px;
+			}
+		}
+		.bg-stretch {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}
+	.visual-area-products {
+		position: relative;
+		overflow: hidden;
 		font-size: 1.4rem;
 		line-height: 1.5;
 		color: #fff;
